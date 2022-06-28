@@ -1,7 +1,2 @@
 ﻿  Main.cpp
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(25,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(49,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(50,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(67,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(68,27): warning C4018: '<': signed/unsigned mismatch
-  PairTrading.vcxproj -> C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Debug\PairTrading.exe
+C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp : fatal error C1041: cannot open program database 'C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Debug\vc142.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS

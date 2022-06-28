@@ -34,12 +34,29 @@ float min(vector<vector <string>> currData)
     return result;
 }
 
+float max(vector<vector <string>> currData)
+{
+    //string current = currData[1][4];
+    float result = stof(currData[1][4]);
+    for (int i = 2; i < currData.size(); ++i)
+    {
+        float curr = stof(currData[i][4]);
+        if (result < curr)
+        {
+            result = curr;
+        }
+    }
+
+    return result;
+}
+
 
 int main()
 {
     ifstream  data("SHEL.csv");
     string line{};
     vector<vector<string>> shel;
+    
     while (data && getline(data, line)) {
         // Tokenize the line and store result in vector. Use range constructor of std::vector
         vector<string> row{ sregex_token_iterator(line.begin(),line.end(),comma,-1), sregex_token_iterator() };
@@ -51,9 +68,11 @@ int main()
             cout << shel[i][j] << "\t";
         }
         cout << endl;
-    }
+    } 
+
     cout << endl;
     cout << endl;
+
     cout << "~ The chevron Data ~" << endl;
     ifstream  data2("CVX.csv");
     string line2{};
@@ -74,8 +93,12 @@ int main()
     
     float minShel = min(shel);
     float minCvx = min(cvx);
+    float maxShel = max(shel);
+    float maxCvx= max(cvx);
     //cout << " Testing if this is right collumn : " << minShel << endl;
     //cout << " Testing if this is right collumn for cvx: " << minCvx << endl;
+    //cout << " Testing if this is right collumn : " << maxShel << endl;
+    //cout << " Testing if this is right collumn for cvx: " << maxCvx << endl;
     return 0;
 }
 
