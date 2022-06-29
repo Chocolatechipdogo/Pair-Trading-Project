@@ -1,0 +1,2 @@
+﻿  Main.cpp
+C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp : fatal error C1041: cannot open program database 'C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Debug\vc142.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
