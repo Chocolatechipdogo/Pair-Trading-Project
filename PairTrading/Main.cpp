@@ -50,6 +50,36 @@ float max(vector<vector <string>> currData)
     return result;
 }
 
+float mean(vector<vector<string>> data)
+{
+    float result = stof(data[1][4]);
+    int count = 1; 
+    for (int i = 2; i < data.size(); ++i)
+    {
+        result += stof(data[i][4]);
+        ++count;
+    }
+    result = result / count; 
+    return result;
+}
+
+int get_number_of_days(vector<vector<string>> dataset)
+{
+    
+    int count = 0;
+    for (int i = 1; i < dataset.size(); ++i)
+    {
+        ++count;
+    }
+    return count;
+}
+
+float raw()
+{
+    return 0;
+
+}
+
 
 int main()
 {
@@ -71,6 +101,9 @@ int main()
     } 
 
     cout << endl;
+    int dayShell = get_number_of_days(shel);
+    cout << "Number of days in shell's data: " << dayShell << endl;
+    cout << endl;
     cout << endl;
 
     cout << "~ The chevron Data ~" << endl;
@@ -90,6 +123,10 @@ int main()
         cout << endl;
     }
 
+    cout << endl;
+    int dayCvx = get_number_of_days(cvx);
+    cout << "Number of days in shell's data: " << dayCvx << endl;
+
     
     float minShel = min(shel);
     float minCvx = min(cvx);
@@ -99,6 +136,11 @@ int main()
     //cout << " Testing if this is right collumn for cvx: " << minCvx << endl;
     //cout << " Testing if this is right collumn : " << maxShel << endl;
     //cout << " Testing if this is right collumn for cvx: " << maxCvx << endl;
+
+    float meanShel = mean(shel);
+   // cout << " Testing  : " << meanShel << endl;
+    float meanCvx = mean(cvx);
+    //cout << " Testing if this is right collumn : " << meanCvx << endl;
     return 0;
 }
 
