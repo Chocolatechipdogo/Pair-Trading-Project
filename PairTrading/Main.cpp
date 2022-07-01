@@ -17,14 +17,14 @@ using namespace std;
 const regex comma(",");
 
 
-//I am going to use the close part of the data to look for the 
+//I am going to use the adj close part of the data to look for the 
 float min(vector<vector <string>> currData)
 {
     //string current = currData[1][4];
-    float result = stof(currData[1][4]);
+    float result = stof(currData[1][5]);
     for (int i = 2; i < currData.size(); ++i)
     {
-        float curr = stof(currData[i][4]);
+        float curr = stof(currData[i][5]);
         if (result > curr)
         {
             result = curr;
@@ -37,10 +37,10 @@ float min(vector<vector <string>> currData)
 float max(vector<vector <string>> currData)
 {
     //string current = currData[1][4];
-    float result = stof(currData[1][4]);
+    float result = stof(currData[1][5]);
     for (int i = 2; i < currData.size(); ++i)
     {
-        float curr = stof(currData[i][4]);
+        float curr = stof(currData[i][5]);
         if (result < curr)
         {
             result = curr;
@@ -52,11 +52,11 @@ float max(vector<vector <string>> currData)
 
 float mean(vector<vector<string>> data)
 {
-    float result = stof(data[1][4]);
+    float result = stof(data[1][5]);
     int count = 1; 
     for (int i = 2; i < data.size(); ++i)
     {
-        result += stof(data[i][4]);
+        result += stof(data[i][5]);
         ++count;
     }
     result = result / count; 
@@ -138,9 +138,9 @@ int main()
     //cout << " Testing if this is right collumn for cvx: " << maxCvx << endl;
 
     float meanShel = mean(shel);
-   // cout << " Testing  : " << meanShel << endl;
+    cout << " Testing Shel's mean : " << meanShel << endl;
     float meanCvx = mean(cvx);
-    //cout << " Testing if this is right collumn : " << meanCvx << endl;
+    cout << " Testing CVX's mean : " << meanCvx << endl;
     return 0;
 }
 
