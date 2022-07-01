@@ -3,8 +3,8 @@ C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(25,23)
 C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(41,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(57,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(70,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(96,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(97,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(119,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(120,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(97,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(98,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(120,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Main.cpp(121,27): warning C4018: '<': signed/unsigned mismatch
   PairTrading.vcxproj -> C:\Users\steph\Documents\GitHub\Pair-Trading-Project\PairTrading\Debug\PairTrading.exe

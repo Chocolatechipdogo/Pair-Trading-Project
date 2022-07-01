@@ -17,7 +17,7 @@ using namespace std;
 const regex comma(",");
 
 
-//I am going to use the adj close part of the data to look for the 
+//useing the adj close part of the data to look for the minimum
 float min(vector<vector <string>> currData)
 {
     //string current = currData[1][4];
@@ -33,7 +33,7 @@ float min(vector<vector <string>> currData)
 
     return result;
 }
-
+//caculates the maximum value from the adjusted closed collumn assuming n
 float max(vector<vector <string>> currData)
 {
     //string current = currData[1][4];
@@ -49,7 +49,7 @@ float max(vector<vector <string>> currData)
 
     return result;
 }
-
+// calculates the mean of the data form the adjusted close value, assuming that the vector has data
 float mean(vector<vector<string>> data)
 {
     float result = stof(data[1][5]);
@@ -62,7 +62,7 @@ float mean(vector<vector<string>> data)
     result = result / count; 
     return result;
 }
-
+//gets number of days in the dataset ignoring the first array which contains the names of the data
 int get_number_of_days(vector<vector<string>> dataset)
 {
     
@@ -73,14 +73,15 @@ int get_number_of_days(vector<vector<string>> dataset)
     }
     return count;
 }
-
+// tryed to set this Function up to get the values like x^2 for corrilation
 float raw()
 {
     return 0;
 
 }
 
-
+// main has the code for converting data into strings to be stored in the vectors because of lack of time to try and turn it into a function.
+//NOTE: sregex_token_iterator is something I am not to familiar with, in the future look into this
 int main()
 {
     ifstream  data("SHEL.csv");
@@ -125,22 +126,23 @@ int main()
 
     cout << endl;
     int dayCvx = get_number_of_days(cvx);
-    cout << "Number of days in shell's data: " << dayCvx << endl;
-
+    cout << "Number of days in Cvx's data: " << dayCvx << endl;
+    cout << endl;
+    cout << endl;
     
     float minShel = min(shel);
     float minCvx = min(cvx);
     float maxShel = max(shel);
     float maxCvx= max(cvx);
-    //cout << " Testing if this is right collumn : " << minShel << endl;
-    //cout << " Testing if this is right collumn for cvx: " << minCvx << endl;
-    //cout << " Testing if this is right collumn : " << maxShel << endl;
-    //cout << " Testing if this is right collumn for cvx: " << maxCvx << endl;
+    cout << " minimum of Shel: " << minShel << endl;
+    cout << " minimum of CVX: " << minCvx << endl;
+    cout << " maximum of Shel: " << maxShel << endl;
+    cout << " maximum of CVX: " << maxCvx << endl;
 
     float meanShel = mean(shel);
-    cout << " Testing Shel's mean : " << meanShel << endl;
+    cout << " Shel's mean : " << meanShel << endl;
     float meanCvx = mean(cvx);
-    cout << " Testing CVX's mean : " << meanCvx << endl;
+    cout << " CVX's mean : " << meanCvx << endl;
     return 0;
 }
 
